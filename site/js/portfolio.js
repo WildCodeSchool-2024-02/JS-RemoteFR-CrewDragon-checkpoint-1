@@ -2,7 +2,7 @@ const avatar = document.querySelector("#avatar");
 
 avatar.addEventListener("click", () => {
 	/** Step 1 */
-	avatar.src = "./image/avatar.svg";
+	// avatar.src = "./image/avatar.svg";
 
 	/** Step 1 with 💪 */
 	const img = avatar.src;
@@ -18,14 +18,23 @@ const firstname = document.querySelector("#firstname");
 const buttonName = document.querySelector(".modifyName");
 
 buttonName.addEventListener("click", () => {
-	/** Step 3 */
-	const pinkBG = document.querySelector(".pink-bg");
+	// /** Step 4 */
+	// const pinkBG = document.querySelectorAll(".pink-bg");
+	// const pinkText = document.querySelectorAll(".pink-text");
 
 	const newName = prompt("New name : ");
 	const color = prompt("Color hexa (ex : #750ff7)");
+	// pinkBG.forEach((bg) => {
+	// 	bg.style.backgroundColor = color;
+	// });
+	// pinkText.forEach((text) => {
+	// 	text.style.color = color;
+	// });
 
 	firstname.style.color = "white";
 	firstname.textContent = newName;
 
-	pinkBG.style.backgroundColor = color;
+	/** step 4 with 💪 */
+	const root = document.querySelector(":root");
+	root.style.setProperty("--lightWildColor", color);
 });
