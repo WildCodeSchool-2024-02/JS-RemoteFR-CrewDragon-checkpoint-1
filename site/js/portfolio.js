@@ -30,7 +30,6 @@ const allLinkChange = () => {
 allLinkChange();
 
 
-
 const changeLi = document.getElementById("changeLi");
 changeLi.addEventListener("click", () => {
     const ulContainer = document.querySelectorAll(".cheat");
@@ -63,6 +62,4 @@ pushInput.addEventListener("click", () => {
     newWord.classList.add("newWord");
     newWord.innerText = `${addInput}`
     containerAdd.appendChild(newWord);
-
-
 })
