@@ -53,3 +53,18 @@ buttonDevTool.addEventListener("click", () => {
 		frontDevTools[i].textContent = tools[i];
 	}
 });
+
+const form = document.querySelector("#form");
+const toolBack = document.querySelector("#toolBack");
+const allTools = document.querySelector("#allTools");
+
+form.addEventListener("submit", (e) => {
+	e.preventDefault();
+
+	const li = document.createElement("li");
+	li.textContent = toolBack.value;
+
+	allTools.appendChild(li);
+
+	toolBack.value = "";
+});
