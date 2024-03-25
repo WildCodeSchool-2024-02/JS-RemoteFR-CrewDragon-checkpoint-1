@@ -21,6 +21,7 @@ buttonName.addEventListener("click", () => {
 	// /** Step 4 */
 	// const pinkBG = document.querySelectorAll(".pink-bg");
 	// const pinkText = document.querySelectorAll(".pink-text");
+	const allA = document.querySelectorAll("a");
 
 	const newName = prompt("New name : ");
 	const color = prompt("Color hexa (ex : #750ff7)");
@@ -31,10 +32,24 @@ buttonName.addEventListener("click", () => {
 	// 	text.style.color = color;
 	// });
 
+	allA.forEach((a) => {
+		a.style.color = color;
+	});
+
 	firstname.style.color = "white";
 	firstname.textContent = newName;
 
 	/** step 4 with 💪 */
 	const root = document.querySelector(":root");
 	root.style.setProperty("--lightWildColor", color);
+});
+
+const buttonDevTool = document.querySelector("#buttonDevTools");
+const frontDevTools = document.querySelectorAll("#front-dev-tools li");
+
+buttonDevTool.addEventListener("click", () => {
+	const tools = ["Github", "VSC", "Terminal"];
+	for (let i = 0; i < frontDevTools.length; i++) {
+		frontDevTools[i].textContent = tools[i];
+	}
 });
