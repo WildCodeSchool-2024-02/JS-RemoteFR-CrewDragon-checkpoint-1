@@ -46,10 +46,14 @@ p {
   margin-bottom: calc(var(--gutter) * -0.3125);
 }
 
-/*step3*/
+/*step3, step5*/
 @media screen and (max-width: 700px) {
   .desktop {
     display: none;
+  }
+  .back-front {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 
