@@ -147,4 +147,11 @@ p {
     display: block;
   }
 
-}
+  /* Step 4 */
+  .skills--title {
+    display: none;
+  }
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
