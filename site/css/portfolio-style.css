@@ -44,16 +44,17 @@ p {
 
 }
 
-
-@media (max-width: 700px) {
-
-  .desktop {
-
-  display: none;
+.desktop {
+  display: flex;
   justify-content: center;
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+}
+
+@media (max-width: 700px) {
+  .desktop {
+  display: none;
 }
 
 }
