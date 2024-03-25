@@ -71,6 +71,9 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  /* Step 5 */
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .skills--title {
@@ -155,3 +158,5 @@ p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
+}
