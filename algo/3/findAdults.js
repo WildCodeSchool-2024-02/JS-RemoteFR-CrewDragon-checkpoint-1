@@ -26,18 +26,21 @@ const persons = [
 */
 
 function findAdults(persons) {
-  for (let i = 0; i < persons.length; i++ ){
-    if (persons[i].sex === "female" && persons[i].age > 18){
-      console.log(persons.name);
-      return persons.name
+  const adults = [];
+  const femme = [];
+  const homme = [];
+  for (let i = 0; i < persons.length; i++) {
+    if (persons[i].sex === "female" && persons[i].age > 18) {
+      femme.push(persons[i].name)
     }
   }
-  for (let i = 0; i < persons.length; i++ ){
-    if (persons[i].sex === "male" && persons[i].age > 18){
-      console.log(persons.name);
-      return persons.name
+  for (let i = 0; i < persons.length; i++) {
+    if (persons[i].sex === "male" && persons[i].age > 18) {
+      homme.push(persons[i].name)
     }
   }
+  adults.push(femme, homme)
+  return adults
 }
 
 module.exports = findAdults;
