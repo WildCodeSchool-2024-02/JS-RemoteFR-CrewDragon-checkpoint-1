@@ -4,11 +4,14 @@ avatarImage.addEventListener("click", () => {
     avatarImage.src = "image/avatar.svg";
 })
 
-//step2
+//step2, step3
 const buttonTextColor = document.querySelector("#button-text-color");
+const descriptionPinkBg = document.querySelector(".pink-bg");
 const firstname = document.querySelector("#firstname");
 buttonTextColor.addEventListener("click", () => {
-    const question = prompt("Enter your name");
-    firstname.innerHTML = question;
+    const questionColor = prompt("Enter a color");
+    const questionName = prompt("Enter your name");
+    firstname.innerHTML = questionName;
     firstname.style.color = "white";
+    descriptionPinkBg.style.backgroundColor = questionColor;
 })
