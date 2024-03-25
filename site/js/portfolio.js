@@ -38,18 +38,31 @@ changeLi.addEventListener("click", () => {
     for (let i = 0, ii = ulContainer.length; i < ii; i++){
         ulContainer.forEach(e => e.remove());
     }
-    const card1 = document.createElement("li");
-    card1.classList.add("cheat");
-    card1.innerText = "VScode"
-    container.appendChild(card1);
+    const word1 = document.createElement("li");
+    word1.classList.add("cheat");
+    word1.innerText = "VScode"
+    container.appendChild(word1);
 
-    const card2 = document.createElement("li");
-    card2.classList.add("cheat");
-    card2.innerText = "github"
-    container.appendChild(card2);
+    const word2 = document.createElement("li");
+    word2.classList.add("cheat");
+    word2.innerText = "github"
+    container.appendChild(word2);
 
-    const card3 = document.createElement("li");
-    card3.classList.add("cheat");
-    card3.innerText = "Terminal"
-    container.appendChild(card3);
+    const word3 = document.createElement("li");
+    word3.classList.add("cheat");
+    word3.innerText = "Terminal"
+    container.appendChild(word3);
+})
+
+const pushInput = document.getElementById("pushInput")
+pushInput.addEventListener("click", () => {
+    const addInput = document.getElementById("addInput").value;
+    const containerAdd = document.getElementById("addLi");
+
+    const newWord = document.createElement("li");
+    newWord.classList.add("newWord");
+    newWord.innerText = `${addInput}`
+    containerAdd.appendChild(newWord);
+
+
 })
