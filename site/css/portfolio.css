@@ -159,4 +159,9 @@ p {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* Step 6 */
+  .column:first-of-type {
+    order: 1;
+  }
+
 }
