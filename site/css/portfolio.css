@@ -148,6 +148,8 @@ p {
 
 }
 
+
+
 @media screen and (min-width: 700px) {
   .menu {
     justify-content: flex-end;
@@ -189,9 +191,8 @@ p {
 
   @media (min-width: 700px) {
     .projects {
-      display: flex;
-      flex-wrap: nowrap;
-    }
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
 
     .projects .box {
       flex: 1;
@@ -202,3 +203,4 @@ p {
         margin-right: 0;
       }
     }
+    /*
