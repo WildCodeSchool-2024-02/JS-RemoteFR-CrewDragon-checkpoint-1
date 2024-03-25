@@ -7,6 +7,9 @@ thirdAngle(20, 80) doit retourner 80
 */
 
 function thirdAngle(a, b) {
+  let somme = a + b;
+  let third = 180 - somme;
+  return third;
   // Your code here !
 }
 
