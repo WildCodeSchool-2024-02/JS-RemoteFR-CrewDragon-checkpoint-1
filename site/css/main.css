@@ -28,10 +28,19 @@ body {
   padding: 0;
 }
 
-header nav {
+ul {
   display: flex;
   margin: var(--gutter) calc(var(--gutter) * 2);
+  justify-content: flex-end;
+ 
 }
+
+.titre{
+  display: flex;
+  justify-content: center;
+}
+
+
 
 header nav img {
   height: calc(var(--gutter) * 3);

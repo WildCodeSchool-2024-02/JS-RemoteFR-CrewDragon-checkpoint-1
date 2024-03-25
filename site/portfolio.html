@@ -22,6 +22,19 @@
     <main>
       <!-- First banner with title, description, avatar and image desktop -->
       <!-- You can use the avatar image on the folder image -->
+     
+     <div class="titre"> <h1>Checkpoint</h1>
+    </div>
+<div class="text">
+     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate natus tempore accuhlorem10
+      !</p></div>
+     
+     <div class="avatar">
+       <img src="./image/avatar.svg" alt="Avatar" style="cursor: pointer;" id="logo">
+       <img id="imageApresClic" src="./image/avatar-bis.png" alt="Image à afficher" >
+      
+      </div>
+    
       <section>
         <figure class="desktop">
           <img src="image/desktop.svg" alt="desktop" />
@@ -29,17 +42,21 @@
       </section>
 
       <!-- Second banner with description of your name and your presentation -->
-      <article>
+      <article id="backColors">
         <section class="description pink-bg">
           <h1>Hi, I’m <span id="firstname">Matt</span>. Nice to meet you.</h1>
-          <p>Since the beginning of my journey as a freelance developer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time.</p>
+          Since the beginning of my journey as a freelance developer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, 
+            and perpetually working on improving my chops one problem at a time.
+          
+          <button class="boutton" onclick="modifyText()">Modifer le texte et la couleur</button>
         </section>
       </article>
+   
 
       <!-- Bloc of list of skill front end and back end -->
-        
+       <h2 class="skills--title">My Skills</h2> 
       <article class="skills">
-        <h2 class="skills--title">My Skills</h2>
+        
           <section class="column">
               <img src="image/frontend.svg" alt="" />
               <h3>Back-end Developer</h3>
@@ -67,9 +84,9 @@
       </article>
 
       <!-- Third banner with list of all your projects -->
-      <article class="projects">
-          <h2>My Recent Work</h2>
-          <p>Here are a few projects I've worked on recently. Want to see more? Email me.</p>
+      <h2 class="recent">My Recent Work</h2>
+          <p class="recently">Here are a few projects I've worked on recently. Want to see more? Email me.</p>
+         <article class="projects"> 
           <section class="box">
             <img src="https://mattfarley.ca/img/logos/kybercore.svg" alt="logo-entreprise" />
             <p>Next level plug and play chassis systems for custom do-it-yourself lightsaber builds.</p>
@@ -85,7 +102,7 @@
             <p>Beautifully simple websites for independent distributors of Young Living Essential Oils.</p>
             <a href="www.ylbuilders.com">www.ylbuilders.com</a>
           </section>
-          <section class="box">
+          <section class="box" id="boxx">
             <img src="https://mattfarley.ca/img/logos/dovetail.svg" alt="logo-entreprise" />
             <p>A space and member management solution for coworking communities both big and small.</p>
             <a class="disabled" >Shutdown in 2017</a>
