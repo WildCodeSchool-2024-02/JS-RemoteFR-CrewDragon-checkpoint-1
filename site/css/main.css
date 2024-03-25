@@ -29,7 +29,9 @@ body {
 }
 
 header nav {
-  display: flex;
+  display:flex
+  justify-content: space-between; 
+  align-items: center;
   margin: var(--gutter) calc(var(--gutter) * 2);
 }
 
