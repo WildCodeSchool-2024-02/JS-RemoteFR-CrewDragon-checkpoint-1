@@ -97,7 +97,7 @@ p {
 }
 
 .box {
-  width: 25%;
+  width: 75%;
   padding: calc(var(--gutter) * 2);
   border: var(--styledBorder);
   margin: calc(var(--gutter) * 1.25);
@@ -107,4 +107,47 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+#upSection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.desktop{
+  display: none;
+}
+.disabled{
+  opacity: 50%;
+}
+.bonus{
+  display: block;
+}
+
+@media (min-width: 700px){
+  header nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  .desktop{
+    display: block;
+  }
+  .skills{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+  .column{
+    width: 100%;
+  }
+  .bonus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .box {
+    width: 25%;
+  }
+
 }
