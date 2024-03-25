@@ -23,6 +23,14 @@ p {
   padding: 0 var(--gutter);
 }
 
+.first-banner {
+  padding: var(--gutter)
+}
+
+.first-banner P {
+  padding: 0;
+}
+
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
@@ -117,6 +125,13 @@ p {
   nav {
     display: flex;
     justify-content: space-between;
+  }
+
+  /* Step 2 */
+  .first-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
 }
