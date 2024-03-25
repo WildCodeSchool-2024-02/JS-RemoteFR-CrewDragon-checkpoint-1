@@ -150,3 +150,11 @@ p {
 .disabled {
   opacity: 0.5;
 }
+
+/*JS step2*/
+#button-text-color {
+  padding: 15px;
+  background-color: rgb(212, 140, 152);
+  border: solid 2px white;
+  color: white;
+}
