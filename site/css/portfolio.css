@@ -60,6 +60,17 @@ p {
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
+  grid-area: title;
+}
+
+.skills section:nth-of-type(1) {
+  grid-area: skills1; 
+
+}
+
+.skills section:nth-of-type(2) {
+  grid-area: skills2; 
+
 }
 
 .column {
@@ -96,6 +107,10 @@ p {
   color: var(--purple);
 }
 
+.projects .disabled {
+  opacity: 0.5;
+}
+
 .box {
   width: 25%;
   padding: calc(var(--gutter) * 2);
@@ -107,4 +122,59 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+
+
+@media screen and (min-width: 700px) {
+  header nav {
+    justify-content: space-between;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-areas: 
+    "title title"
+    "skills2 skills1";
+  }
+
+  main section:nth-of-type(1) {
+    text-align: center;
+  }
+
+  .projects {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .projects h2 {
+    width: 100%;
+  
+  }
+
+  .projects p {
+    width: 100%;
+
+  }
+
+  
+}
+
+@media screen and (max-width: 699px) {
+  .desktop {
+    display: none;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "skills2"
+     "skills1";
+  }
+
+  
 }
