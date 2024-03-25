@@ -25,8 +25,37 @@ const persons = [
 
 */
 
-function findAdults(persons) {
-  // Your code here !
+function trierAdultesParGenre(persons) {
+  const femmesAdultes = [];
+  const hommesAdultes = [];
+
+  personnes.forEach(persons => {
+      if (personnes.genre === 'femme' && persons.age >= 18) {
+          femmesAdultes.push(personne);
+      } else if (personne.genre === 'homme' && persons.age >= 18) {
+          hommesAdultes.push(persons);
+      }
+  });
+
+  return [femmesAdultes, hommesAdultes];
 }
 
+const personnes = [
+  { nom: "Amandine", age: 25, genre: "femme" },
+  { nom: "David", age: 30, genre: "homme" },
+  { nom: "Kelly", age: 17, genre: "femme" },
+  { nom: "Nicolas", age: 20, genre: "homme" },
+  { nom: "Fanny", age: 40, genre: "femme" }
+];
+
+const [femmesAdultes, hommesAdultes] = trierAdultesParGenre(persons);
+
+console.log("Femmes adultes :", femmesAdultes);
+console.log("Hommes adultes :", hommesAdultes);
+
+
 module.exports = findAdults;
+
+
+
+
