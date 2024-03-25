@@ -23,6 +23,7 @@ p {
   padding: 0 var(--gutter);
 }
 
+/* Step 2 */
 .first-banner {
   padding: var(--gutter)
 }
@@ -30,6 +31,13 @@ p {
 .first-banner P {
   padding: 0;
 }
+/* Rest of step 2 in media querries*/
+
+/* Step 3 */
+.desktop {
+  display: none;
+}
+/* Rest of Step 3 in media querries*/
 
 .menu {
   display: flex;
@@ -132,6 +140,11 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  /* Step 3 */
+  .desktop {
+    display: block;
   }
 
 }
