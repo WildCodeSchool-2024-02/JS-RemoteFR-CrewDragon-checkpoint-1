@@ -26,6 +26,15 @@ p {
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
+  /*step1*/
+  width: 90vw;
+}
+
+/*step1*/
+@media screen and (min-width: 700px) {
+  .menu {
+    justify-content: flex-end;
+  }
 }
 
 .desktop {
