@@ -108,3 +108,15 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+/* Media querries */
+
+@media screen and (min-width: 700px) {
+
+  /* Step 1 */
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
