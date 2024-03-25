@@ -111,13 +111,21 @@ p {
 
 /** Le code du BG c'est à dire moi-même */
 
-@media screen and (min-width: 700px) {
-	nav {
-		display: flex;
-		justify-content: space-between;
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.banner {
+	text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+	.desktop {
+		display: none;
 	}
 
 	.banner {
-		text-align: center;
+		margin-bottom: 1rem;
 	}
 }
