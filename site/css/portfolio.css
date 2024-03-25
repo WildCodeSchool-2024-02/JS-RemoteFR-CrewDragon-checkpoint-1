@@ -129,20 +129,6 @@ nav {
 	flex: 1;
 }
 
-@media screen and (max-width: 700px) {
-	.desktop {
-		display: none;
-	}
-
-	.banner {
-		margin-bottom: 1rem;
-	}
-
-	.container {
-		flex-direction: column-reverse;
-	}
-}
-
 .modifyName {
 	background-color: var(--purple); /* Green */
 	border: none;
@@ -158,4 +144,65 @@ nav {
 .disabled {
 	opacity: 0.5;
 	pointer-events: none;
+}
+
+.projects {
+	display: grid;
+	text-align: center;
+	grid-template-areas:
+		"h2 h2 h2"
+		"p p p"
+		"kybercore basin ylbuilders"
+		". dovetail .";
+}
+
+.projects h2 {
+	grid-area: h2;
+}
+
+.projects p {
+	grid-area: p;
+}
+
+.box:nth-child(1) {
+	grid-area: kybercore;
+}
+.box:nth-child(2) {
+	grid-area: basin;
+}
+.box:nth-child(3) {
+	grid-area: ylbuilders;
+}
+.box:nth-child(4) {
+	grid-area: dovetail;
+}
+
+.box {
+	width: auto;
+}
+
+@media screen and (max-width: 700px) {
+	.desktop {
+		display: none;
+	}
+
+	.banner {
+		margin-bottom: 1rem;
+	}
+
+	.container {
+		flex-direction: column-reverse;
+	}
+
+	.projects {
+		display: grid;
+
+		grid-template-areas:
+			"h2"
+			"p"
+			"kybercore"
+			"basin"
+			"ylbuilders"
+			"dovetail";
+	}
 }
