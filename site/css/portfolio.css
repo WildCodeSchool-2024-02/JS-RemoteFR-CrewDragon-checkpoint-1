@@ -27,6 +27,8 @@ p {
   padding: 0 var(--gutter);
 }
 
+/*Added display flex to navbar to put li on the right*/
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -37,6 +39,7 @@ nav {
   margin-bottom: var(--gutter);
 }
 
+/*Added a flex box for the top part*/
 .flexbox {
   display: flex;
   flex-direction: column;
@@ -44,13 +47,14 @@ nav {
   text-align: center;
 }
 
+/*Don't display desktop picture on small screens -> mobile first*/
 .desktop {
   display: none;
 }
 
 
 
-/* RESPONSIVE*/
+/* Responsive display desktop picture on big screens*/
 
 @media screen and (min-width: 700px) {
   .desktop {
@@ -123,7 +127,7 @@ nav {
   opacity: 0.6;
 }
 
-/*RESPONSIVE*/
+/*Responsive for the skill section, row reverse and changed border radius compared to mobile version*/
 
 @media screen and (min-width: 700px) {
   .skills {
@@ -173,6 +177,8 @@ nav {
   text-align: center;
 }
 
+/*Added flexbox boxes*/
+
 .boxes {
   display: flex;
   flex-direction: column;
@@ -191,6 +197,7 @@ nav {
 }
 
 
+/*Put all boxes on the same line for big screens*/
 
 @media screen and (min-width: 700px) {
 
