@@ -43,6 +43,13 @@ p {
   margin-bottom: calc(var(--gutter) * -0.3125);
 }
 
+/*step3*/
+@media screen and (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+}
+
 .description {
   color: var(--light);
   display: flex;
