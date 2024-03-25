@@ -39,4 +39,4 @@ return [adultFemale, adultMale];
 
 // 
 
-module.exports = findAdults
+module.exports = findAdults}})}
