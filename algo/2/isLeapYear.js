@@ -12,6 +12,6 @@ function isLeapYear(year) {
     return true;
   } else {
     return false;
-}
+  }
 
-module.exports = isLeapYear;
+  module.exports = isLeapYear;
