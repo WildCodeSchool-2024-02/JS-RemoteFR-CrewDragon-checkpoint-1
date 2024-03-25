@@ -31,15 +31,16 @@ function findAdults(persons) {
   const homme = [];
   for (let i = 0; i < persons.length; i++) {
     if (persons[i].sex === "female" && persons[i].age > 18) {
-      femme.push(persons[i].name)
+      femme.push(persons[i])
     }
   }
   for (let i = 0; i < persons.length; i++) {
     if (persons[i].sex === "male" && persons[i].age > 18) {
-      homme.push(persons[i].name)
+      homme.push(persons[i])
     }
   }
   adults.push(femme, homme)
+  console.log(adults);
   return adults
 }
 

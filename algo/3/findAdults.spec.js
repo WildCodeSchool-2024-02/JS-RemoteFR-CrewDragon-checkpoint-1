@@ -23,5 +23,5 @@ test("both length should be 3", () => {
 test("adult array should include Homer", () => {
   expect(findAdults(persons)[1].some((e) => e.name === "Homer Simpson")).toBe(
     true
-  );
+    );
 });
