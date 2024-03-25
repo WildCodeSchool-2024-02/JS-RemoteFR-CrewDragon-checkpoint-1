@@ -30,7 +30,7 @@ p {
   width: 90vw;
 }
 
-/*step1, step4, step6*/
+/*step1, step4, step6, step 8 optional*/
 @media screen and (min-width: 700px) {
   .menu {
     justify-content: flex-end;
@@ -39,6 +39,11 @@ p {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+  }
+  .onlyProjects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 }
 
