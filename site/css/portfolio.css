@@ -23,6 +23,19 @@ p {
   padding: 0 var(--gutter);
 }
 
+
+h2 {
+
+  font-weight: lighter;
+}
+
+
+.container {
+
+padding: 0%;
+margin: 0%;
+}
+
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
@@ -108,3 +121,44 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+
+
+
+.disabled {
+  opacity: 0.5;
+}
+
+@media screen and (min-width : 700px) {
+
+.menu {
+  display: flex;
+  justify-content: right;
+ 
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+}
+
+@media screen and (max-width : 699px) {
+main section figure{
+  display: none;
+}
+}
+
+.skills {
+
+  display: flex;
+  flex-direction: column;
+  
+}
+
