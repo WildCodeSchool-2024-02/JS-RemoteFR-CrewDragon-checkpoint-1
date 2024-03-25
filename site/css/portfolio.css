@@ -117,3 +117,10 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+/*step2*/
+.first-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
