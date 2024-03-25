@@ -27,6 +27,8 @@ const persons = [
 
 function findAdults(persons) {
   // Your code here !
+  
+  console.log()
 }
 
 module.exports = findAdults;

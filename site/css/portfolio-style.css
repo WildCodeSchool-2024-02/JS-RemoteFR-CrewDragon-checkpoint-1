@@ -1,6 +1,6 @@
 :root {
   --radius: 12px;
-
+  
   --cardColor: #ffffff;
   --borderColor: #e6ecf8;
   --shadowColor: #e9f0f380;
@@ -11,27 +11,49 @@
   --textAlign: center;
 }
 
-img {
+.imgDesktop {
   max-width: 100%;
+}
+.avatar{
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 h1 {
   font-size: calc(var(--gutter) * 1.5);
+  text-align: center;
+}
+
+.firstBanner{
+  display: flex;
+  align-content: center;
+  width: 100px;
 }
 
 p {
   padding: 0 var(--gutter);
+  text-align: center;
 }
 
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
+  justify-content: flex-end;
+  width: 100%;
+
 }
 
 .desktop {
+  display: flex;
+  justify-content: center;
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+}
+
+@media (max-width: 700px) {
+  .desktop  none
 }
 
 .description {
@@ -93,6 +115,9 @@ p {
 }
 
 .projects a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: var(--purple);
 }
 
