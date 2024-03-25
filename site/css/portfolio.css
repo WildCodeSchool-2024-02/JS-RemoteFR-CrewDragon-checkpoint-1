@@ -136,4 +136,8 @@ nav {
 	.banner {
 		margin-bottom: 1rem;
 	}
+
+	.container {
+		flex-direction: column-reverse;
+	}
 }
