@@ -31,6 +31,7 @@ body {
 header nav {
   display: flex;
   margin: var(--gutter) calc(var(--gutter) * 2);
+  /* justify-content: flex-end; */
 }
 
 header nav img {
@@ -58,4 +59,29 @@ button:focus {
 
 #firstname {
   color: red;
-}  
+}
+
+.logo-container {
+  width: 100%;
+}
+
+.projects section.box a.disabled {
+  opacity : 0.5;
+}
+
+.rencent-work-container{
+  display: flex;
+  flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.projects p {
+  display: flex;
+  justify-content: center;
+}
