@@ -11,6 +11,17 @@
   --textAlign: center;
 }
 
+.firstBanner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar{
+  width: 10vw;
+  height: auto;
+}
+
 img {
   max-width: 100%;
 }
@@ -23,6 +34,10 @@ p {
   padding: 0 var(--gutter);
 }
 
+nav{
+  display: flex;
+}
+
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
@@ -32,6 +47,12 @@ p {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+}
+
+@media screen and (max-width: 700px){
+  .desktop {
+    display: none;
+  }
 }
 
 .description {
@@ -55,6 +76,17 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+}
+
+@media screen and (min-width: 700px) {
+  .skills{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .column{
+    width: 40vw;
+  }
 }
 
 .skills--title {
