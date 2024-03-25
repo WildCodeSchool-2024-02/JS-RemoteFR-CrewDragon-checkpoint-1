@@ -30,10 +30,13 @@ p {
   width: 90vw;
 }
 
-/*step1*/
+/*step1, step4*/
 @media screen and (min-width: 700px) {
   .menu {
     justify-content: flex-end;
+  }
+  .back-front {
+    display: flex;
   }
 }
 
