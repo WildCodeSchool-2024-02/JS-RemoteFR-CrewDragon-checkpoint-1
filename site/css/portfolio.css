@@ -108,3 +108,39 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+@media screen and (min-width: 700px) {
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+
+.firstBanner {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.skills--title {
+  margin: calc(var(--gutter) * -0) 0;
+  text-align: var(--textAlign);
+}
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .firstBanner img {
+    display: none;
+  }
+  .p section {
+    flex-direction: column-reverse;
+  }
+  }
