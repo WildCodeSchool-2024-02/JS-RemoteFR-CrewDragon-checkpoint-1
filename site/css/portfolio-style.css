@@ -11,13 +11,17 @@
   --textAlign: center;
 }
 
-.imgDesktop {
-  max-width: 100%;
-}
+/*avatar centering*/
 .avatar{
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-bottom: 2rem;
+
+}
+/*change the pointer in front of the avatar image*/
+.avatar img {
+  cursor: pointer;
 }
 
 h1 {
@@ -25,6 +29,9 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+}
 .firstBanner{
   display: flex;
   align-content: center;
@@ -52,13 +59,6 @@ p {
   margin-bottom: calc(var(--gutter) * -0.3125);
 }
 
-@media (max-width: 700px) {
-  .desktop {
-  display: none;
-}
-
-}
-
 .description {
   color: var(--light);
   display: flex;
@@ -80,20 +80,15 @@ p {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
-  align-content:
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 5% 10%;
 }
 
-@media (max-width: 700px) {
-  .skills {
-  display: block;
-  flex-direction: row-reverse;
-}
-}
+
+
 .skills--title {
-  margin: calc(var(--gutter) * -2) 0;
+  margin: calc(var(--gutter) * 2) 0;
   text-align: var(--textAlign);
 }
 
@@ -136,14 +131,59 @@ p {
 }
 
 .box {
-  width: 25%;
-  padding: calc(var(--gutter) * 2);
+  width: 29%;
+  padding: calc(var(--gutter) * 1);
   border: var(--styledBorder);
   margin: calc(var(--gutter) * 1.25);
   border-radius: var(--radius);
   box-shadow: var(--styledShadow);
+  
+}
+.box img {
+  display: flex;
+  align-content: center;
 }
 
 .purple-text {
   color: var(--purple);
 }
+
+@media (max-width: 700px) {
+  .skills {
+display: flex;
+flex-direction: column-reverse;
+  }
+.desktop {
+  display: none;
+  }
+  .boxes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .box {
+    width: 80%;
+  }
+}
+
+#button {
+  width: 15rem;
+  height: 3rem;
+  border-radius: 10px;
+  background-color: aqua;
+  cursor: pointer;
+}
+
+.disabled {
+ opacity:  0.3;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+  
