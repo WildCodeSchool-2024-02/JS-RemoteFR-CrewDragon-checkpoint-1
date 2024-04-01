@@ -29,7 +29,7 @@ btn.style.textShadow = "0.06em 0.05em  black"
 //add "id" on the button
 btn.id = "button";
 //selection element by TagName "2e section"
-const button = document.getElementsByTagName("section")[1].appendChild(btn);
+const button = document.querySelector("#card1").appendChild(btn);
 //add button as child in the second section
 
 
@@ -48,7 +48,7 @@ btn2.style.textShadow = "0.06em 0.05em  black"
 //add "id" on the button
 btn2.id = "button2";
 //selection element by TagName "1e column"
-const button2 = document.getElementsByTagName("section")[3].appendChild(btn2);
+const button2 = document.querySelector("#card2").appendChild(btn2);
 
 
 //selection background all banner by "class"
@@ -96,4 +96,19 @@ const tools = ["Github", "VSC", "Terminal"]
        frontDevTool[i].textContent = tools[i];
     }
 
+});
+
+const form = document.querySelector("#form");
+const toolBack = document.querySelector("#toolBack");
+const allTools = document.querySelector("#allTools");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    
+    const li = document.createElement("li");
+    li.textContent = toolBack.value;
+
+    allTools.appendChild(li);
+
+    toolBack.value = "";
 });
