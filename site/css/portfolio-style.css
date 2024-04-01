@@ -9,6 +9,7 @@
   --styledShadow: 0 5px 5px 0 var(var(--shadowColor));
 
   --textAlign: center;
+  font-size: 1.2em;
 }
 
 /*avatar centering*/
@@ -17,61 +18,64 @@
   justify-content: center;
   width: 100%;
   margin-bottom: 2rem;
-
 }
+
 /*change the pointer in front of the avatar image*/
 .avatar img {
   cursor: pointer;
 }
 
+/*h1 centering */
 h1 {
-  font-size: calc(var(--gutter) * 1.5);
+  font-size: calc(var(--gutter) * 2);
   text-align: center;
 }
 
+/*h2 centering */
 h2 {
+  font-size: calc(var(--gutter) * 1.5);
+  color: #ffffff;
   text-align: center;
-}
-.firstBanner{
-  display: flex;
-  align-content: center;
-  width: 100px;
 }
 
 p {
+  width: 100%;
   padding: 0 var(--gutter);
   text-align: center;
 }
 
-.menu {
+/*Deplace the menu in the end of header*/
+ul {
   display: flex;
-  margin-bottom: var(--gutter);
+  flex-direction: row;
   justify-content: flex-end;
+  margin-bottom: var(--gutter);
   width: 100%;
-
 }
 
 .desktop {
   display: flex;
   justify-content: center;
   margin: 0;
-  margin-top: calc(var(--gutter) * 5);
-  margin-bottom: calc(var(--gutter) * -0.3125);
+  margin-top: calc(var(--gutter) * 4);
+  margin-bottom: calc(var(--gutter) * -0.1);
 }
 
 .description {
-  color: var(--light);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: calc(var(--gutter) * 3.75);
+  padding: calc(var(--gutter) * 3);
+  color: var(--light);
 }
 
-.description p {
+.description p{
   width: 60%;
   text-align: var(--textAlign);
 }
 
+/*Background pink*/
 .pink-bg {
   background-color: var(--lightWildColor);
 }
@@ -85,23 +89,19 @@ p {
   padding: 5% 10%;
 }
 
-
-
 .skills--title {
-  margin: calc(var(--gutter) * 2) 0;
+  margin: calc(var(--gutter) * 1) 0;
   text-align: var(--textAlign);
 }
 
 .column {
   width: 100%;
-  border-left: var(--styledBorder);
-  border-right: var(--styledBorder);
-  border-bottom: var(--styledBorder);
+  border: var(--styledBorder);
   background-color: var(--cardColor);
   padding: calc(var(--gutter) * 3.75) calc(var(--gutter)* 2.1875);
-  border-radius: var(--radius);
+  border-radius: 1em 0em 1em 0em;
   text-align: var(--textAlign);
-  box-shadow: var(--styledShadow);
+  box-shadow: 0.2em 0.1em 2em 0.1em rgb(196, 190, 156);
 }
 
 .column:first-of-type {
@@ -115,12 +115,19 @@ p {
 }
 
 .column ul {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   padding: 0;
 }
 
 .pink-text {
   color: var(--lightWildColor);
+}
+
+body p {
+  display: flex;
+  justify-content: center;
 }
 
 .projects a {
@@ -130,18 +137,26 @@ p {
   color: var(--purple);
 }
 
+.box img {
+  height: 4rem;
+}
+.box p {
+  height: 4em;
+}
+.box a {
+  text-align: center;
+}
+
 .box {
-  width: 29%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 31%;
   padding: calc(var(--gutter) * 1);
   border: var(--styledBorder);
-  margin: calc(var(--gutter) * 1.25);
+  margin: 1em 1em;
   border-radius: var(--radius);
   box-shadow: var(--styledShadow);
-  
-}
-.box img {
-  display: flex;
-  align-content: center;
 }
 
 .purple-text {
@@ -170,7 +185,15 @@ flex-direction: column-reverse;
   width: 15rem;
   height: 3rem;
   border-radius: 10px;
-  background-color: aqua;
+  background-color: var(--purple);
+  cursor: pointer;
+}
+
+#button2 {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: var(--purple);
   cursor: pointer;
 }
 
@@ -186,4 +209,7 @@ flex-direction: column-reverse;
 
 }
 
-  
+section .box {
+  display: flex;
+  justify-content: center;
+}
