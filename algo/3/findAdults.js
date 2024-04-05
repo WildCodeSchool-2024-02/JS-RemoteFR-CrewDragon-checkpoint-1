@@ -26,8 +26,21 @@ const persons = [
 */
 
 function findAdults(persons) {
-  const adult= persons.filter(person => person.age >= 18);
-  const adultWomen= persons.filter(person => person.sex === "female");
-  const adultMen= persons.filter(person => person.sex === "male");
+  // const adult= persons.filter(person => person.age >= 18);
+  // const adultWomen= persons.filter(person => person.sex === "female");
+  // const adultMen= persons.filter(person => person.sex === "male");
+  const adultFemales = [];
+  const adultMales = [];
+
+  persons.forEach(person => {
+    if (person.age >= 18) {
+      if (person.sex === 'female') {
+        adultFemales.push(person);
+      } else if (person.sex === 'male') {
+        adultMales.push(person);
+      }
+    }
+  });
+  return [adultFemales, adultMales];
 }
 module.exports = findAdults;
